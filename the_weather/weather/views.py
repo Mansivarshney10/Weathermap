@@ -6,7 +6,7 @@ from .forms import CityForm
 # Create your views here.
 
 def index(request):
-    url = 'http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=85a1dc8bd5141945c45a213138d08da5'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q=las%20vegas&units=imperial&appid=85a1dc8bd5141945c45a213138d08da5'
 
     cities = City.objects.all() #return all the cities in the database
 
